@@ -16,63 +16,71 @@ body{
 .header{
   text-align:center;
   padding:20px;
-  font-size:24px;
+  font-size:22px;
   letter-spacing:3px;
   color:#1e90ff;
   border-bottom:1px solid #1e90ff;
 }
 
-/* subtítulo */
 .sub{
   text-align:center;
-  font-size:14px;
+  font-size:13px;
   color:#9cc9ff;
   margin-bottom:20px;
 }
 
-/* área principal */
+/* container */
 .container{
-  width:90%;
+  width:95%;
   margin:auto;
 }
 
-/* bloco da vítima */
+/* bloco */
 .profile{
   display:flex;
+  gap:15px;
   background:#06142a;
   border:1px solid #0d3b7a;
   margin-bottom:20px;
+  padding:10px;
   box-shadow:0 0 10px #001a66;
 }
 
 /* imagem */
 .photo{
-  width:200px;
-  height:200px;
+  width:120px;
+  height:120px;
+  object-fit:cover;
   background:#000;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#555;
-  font-size:12px;
 }
 
 /* texto */
 .info{
-  padding:15px;
   flex:1;
 }
 
 .name{
   color:#4aa3ff;
   font-weight:bold;
-  margin-bottom:10px;
-  font-size:18px;
+  margin-bottom:5px;
 }
 
 .desc{
-  font-size:14px;
-  color:#cfe6ff;
+  font-size:13px;
+}
+
+/* celular */
+@media(max-width:600px){
+  .profile{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .photo{
+    width:100%;
+    height:auto;
+  }
 }
 
 </style>
@@ -90,45 +98,26 @@ Registros classificados de indivíduos afetados por anomalias.
 
 <div class="container">
 
-<!-- VÍTIMA 1 -->
+<!-- VÍTIMA -->
 <div class="profile">
   <img src="Screenshot_20260609-021156~2.png" class="photo">
-  </div>
 
   <div class="info">
     <div class="name">DAVID JERSON</div>
     <div class="desc">
-      DAVID JERSON: Vítima 158 da anonalia Gato de carne.
-      status: encontrado
+      Vítima 158 da anomalia Gato de carne.
+      Status: encontrado.
     </div>
   </div>
 </div>
 
-<!-- VÍTIMA 2 -->
+<!-- OUTRAS -->
 <div class="profile">
-  <div class="photo">
-    FOTO AQUI
-  </div>
+  <div class="photo">FOTO AQUI</div>
 
   <div class="info">
     <div class="name">NOME DA VÍTIMA</div>
-    <div class="desc">
-      Descrição da vítima.
-    </div>
-  </div>
-</div>
-
-<!-- VÍTIMA 3 -->
-<div class="profile">
-  <div class="photo">
-    FOTO AQUI
-  </div>
-
-  <div class="info">
-    <div class="name">NOME DA VÍTIMA</div>
-    <div class="desc">
-      Descrição da vítima.
-    </div>
+    <div class="desc">Descrição da vítima.</div>
   </div>
 </div>
 
